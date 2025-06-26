@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+}
+header{
+    background: linear-gradient(to right, rgb(173, 184, 20), rgb(7, 165, 170));
+    position: relative;
+    border-radius: 0 0 5rem 5rem;
+}
+body{
+    font-family: "Monserrat", sans-serif;
+    background-color: rgb(209, 244, 251);
+}
+a{
+    text-decoration: none;
+    font-family: "Inria sans", sans-serif;
+    color: black;
+}
+nav{
+    background-color: white;
+    padding: 1rem 3.5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 28rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    color: black;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+.lien{
+    margin-left: 3rem;
+}
+.lien:hover{
+    border-bottom: 2px solid;
+}
+.img{
+    width: 100%;
+    max-width: 50rem;
+    height: 25rem;
+}
+a:hover{
+    color: rgb(0, 17, 255);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-family: "Akronim";
+    font-size: xx-large;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+main{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box{
+    background-color: rgba(207, 207, 207, 0.32);
+    border-radius: 1.5rem;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+}
+.services{
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 24rem;
+    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    font-family: "Inconsolata";
+}
+.icone{
+    width: 100%;
+    max-width: 5rem;
+    height: auto;
+}
+footer{
+    background: linear-gradient(to right, rgb(173, 184, 20), rgb(7, 165, 170));
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding-top: 0.3rem;
+    margin-top: 2rem;
+    font-family: "Inconsolata";
+}
+footer h1{
+    text-align: center;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 7rem;
+    text-align: center;
+    gap: 2rem;
+}
+.call{
+    margin-left: 4.5rem;
+}
+footer img{
+    width: 100%;
+    max-width: 2rem;
+    height: auto;
+}
+
+.box {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.burger {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    background: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lien {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}
